@@ -7,7 +7,7 @@ jobs:
   assign-label:
     runs-on: ubuntu-latest
     steps:
-      - name: Assign label
+      - name: Assign label.
         if: contains(github.event.issue.title, 'bug')
         run: |
           curl -X POST \
